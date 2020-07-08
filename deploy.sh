@@ -2,7 +2,7 @@
 
 ENVNAME=$1
 if [ -z ${ENVNAME} ]; then
-	ENVNAME=prd
+	ENVNAME=dev
 fi
 
 echo "Build for env: ${ENVNAME}"
