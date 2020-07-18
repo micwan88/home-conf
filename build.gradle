@@ -57,6 +57,10 @@ task genDir(type: Copy) {
 	def driverFolder = new File("${project.projectDir}/deploy/driver")
 	if (!driverFolder.isDirectory())
 		driverFolder.mkdirs()
+		
+	def webFolder = new File("${project.projectDir}/deploy/web")
+	if (!webFolder.isDirectory())
+		webFolder.mkdirs()
 }
 
 task cleanFiles(type: Delete) {
@@ -104,6 +108,11 @@ task deploy {
 	 	copy {
 	 		from "${project.projectDir}/driver"
 	 		into "${project.projectDir}/deploy/driver"
+	 	}
+	 	
+	 	copy {
+	 		from "${project.projectDir}/web"
+	 		into "${project.projectDir}/deploy/web"
 	 	}
  	}
 }

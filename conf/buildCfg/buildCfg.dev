@@ -2,3 +2,5 @@ appLogLevel=debug
 
 homeConfBrowserPath=c:/your/nonstandard_chrome/installation/chrome.exe
 homeConfWebDriverPath=driver/chromedriver
+homeConfConfURL=http://localhost:8080/home.html
+homeConfCastDeviceName=Living Room TV
