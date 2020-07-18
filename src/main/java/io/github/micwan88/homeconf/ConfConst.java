@@ -1,7 +1,9 @@
 package io.github.micwan88.homeconf;
 
 public class ConfConst {
-	public static final String WEBDRIVER_CHROMEDRIVER_PATH = "webdriver.chrome.driver";
+	public static final String SYSPROP_WEBDRIVER_CHROMEDRIVER_PATH = "webdriver.chrome.driver";
+	public static final String SYSPROP_WEBDRIVER_CHROMEDRIVER_LOGFILE = "webdriver.chrome.logfile";
+	public static final String SYSPROP_WEBDRIVER_CHROMEDRIVER_VERBOSELOG = "webdriver.chrome.verboseLogging";
 	
 	/**
 	 * Chrome argument switch
@@ -19,4 +21,7 @@ public class ConfConst {
 	
 	public static final String APP_PROPERTIES_KEY_BROWSERPATH = "homeConf.browserPath";
 	public static final String APP_PROPERTIES_KEY_WEBDRIVERPATH = "homeConf.webDriverPath";
+	public static final String APP_PROPERTIES_KEY_CONF_URL = "homeConf.confUrl";
+	public static final String APP_PROPERTIES_KEY_CAST_DEVICE_NAME = "homeConf.castDeviceName";
+	public static final String APP_PROPERTIES_KEY_CHROME_USR_PROFILE_PATH = "homeConf.chromeUserProfilePath";
 }
